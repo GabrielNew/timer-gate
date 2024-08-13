@@ -1,6 +1,6 @@
 import "./styles.css";
 
-const createAccount = () => {
+const CreateAccount = () => {
   return (
     <>
       <form>
@@ -10,4 +10,4 @@ const createAccount = () => {
   );
 };
 
-export default createAccount;
+export default CreateAccount;
