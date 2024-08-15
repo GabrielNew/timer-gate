@@ -4,12 +4,16 @@ import "./styles.css";
 import { useState } from "react";
 
 const Login = () => {
-  const { email, setEmail } = useState("");
-  const { password, setPassword } = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
 
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div id="loginBackgroundBox">
           <div id="logoImg">
             <h1>LOGO</h1>
