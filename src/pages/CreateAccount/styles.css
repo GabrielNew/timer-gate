@@ -12,3 +12,69 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.inputEmail {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  width: 50%;
+  margin: 10px;
+  top: 30%;
+  position: absolute;
+  left: 25%;
+}
+
+#userEmail {
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 10px;
+  height: 33px;
+}
+
+.inputPassword {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  width: 50%;
+  margin: 10px;
+  top: 50%;
+  position: absolute;
+  left: 25%;
+}
+
+#userPassword {
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 10px;
+  height: 33px;
+}
+
+#createAccountLink {
+  position: absolute;
+  top: 90%;
+  left: 21%;
+  padding: 10px;
+}
+
+#iconEmail {
+  position: relative;
+  top: 3px;
+}
+
+#iconPassword {
+  position: relative;
+  top: 3px;
+}
+
+#btnLogin {
+  position: absolute;
+  top: 75%;
+  left: 45%;
+}
+
+#logoImg {
+  position: absolute;
+  left: 43%;
+}
