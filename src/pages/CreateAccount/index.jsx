@@ -1,5 +1,6 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { GiPadlock } from "react-icons/gi";
+import { FaRegUser } from "react-icons/fa";
 import { useState } from "react";
 import "./styles.css";
 
@@ -8,16 +9,17 @@ const CreateAccount = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
+
   return (
     <>
       <form>
         <div id="loginBackgroundBox">
           <div id="logoImg">
-            <h1>Create your account</h1>
+            <h2 id="createAccountText">Create your account</h2>
           </div>
           <div className="inputUsername">
             <div>
-              <MdOutlineEmail id="iconEmail" />
+              <FaRegUser id="iconUser" />
               <input
                 type="text"
                 name="inputUsername"
@@ -56,7 +58,7 @@ const CreateAccount = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <div className="inputPassword">
+          <div className="inputConfirmPassword">
             <GiPadlock id="iconPassword" />
             <input
               type="password"
@@ -69,7 +71,7 @@ const CreateAccount = () => {
             />
           </div>
           <div>
-            <button type="submit" id="btnLogin">
+            <button type="submit" id="btnCreateAccount">
               Create account
             </button>
           </div>

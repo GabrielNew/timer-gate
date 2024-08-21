@@ -2,6 +2,14 @@ body {
   background-color: steelblue;
 }
 
+#createAccountText {
+  position: absolute;
+  width: max-content;
+  display: flex;
+  right: -145px;
+  top: 15px;
+}
+
 #loginBackgroundBox {
   background-color: white;
   width: 450px;
@@ -24,7 +32,26 @@ body {
   left: 25%;
 }
 
+.inputUsername {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  width: 50%;
+  margin: 10px;
+  top: 15%;
+  position: absolute;
+  left: 25%;
+}
+
 #userEmail {
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 10px;
+  height: 33px;
+}
+
+#userName {
   border: none;
   outline: 0;
   box-shadow: none;
@@ -38,12 +65,31 @@ body {
   padding: 3px;
   width: 50%;
   margin: 10px;
-  top: 50%;
+  top: 45%;
   position: absolute;
   left: 25%;
 }
 
 #userPassword {
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 10px;
+  height: 33px;
+}
+
+.inputConfirmPassword {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  width: 50%;
+  margin: 10px;
+  top: 60%;
+  position: absolute;
+  left: 25%;
+}
+
+#userConfirmPassword {
   border: none;
   outline: 0;
   box-shadow: none;
@@ -68,10 +114,15 @@ body {
   top: 3px;
 }
 
-#btnLogin {
+#iconUser {
+  position: relative;
+  top: 3px;
+}
+
+#btnCreateAccount {
   position: absolute;
-  top: 75%;
-  left: 45%;
+  top: 85%;
+  left: 40%;
 }
 
 #logoImg {
