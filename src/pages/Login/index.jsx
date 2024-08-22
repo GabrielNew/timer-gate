@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MdOutlineEmail } from "react-icons/md";
 import { GiPadlock } from "react-icons/gi";
 import "./styles.css";
@@ -49,12 +50,12 @@ const Login = () => {
             </button>
           </div>
           <div>
-            <a href="" id="createAccountLink">
+            <Link to="/createAccount" id="createAccountLink">
               Create account
-            </a>
-            <a href="" id="forgotPassLink">
+            </Link>
+            <Link to="/" id="forgotPasswordLink">
               Forgot password
-            </a>
+            </Link>
           </div>
         </div>
       </form>

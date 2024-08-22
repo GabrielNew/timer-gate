@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: steelblue;
 }
 
 #loginBackgroundBox {
@@ -38,7 +38,7 @@ body {
   padding: 3px;
   width: 50%;
   margin: 10px;
-  top: 50%;
+  top: 45%;
   position: absolute;
   left: 25%;
 }
@@ -58,10 +58,10 @@ body {
   padding: 10px;
 }
 
-#forgotPassLink {
+#forgotPasswordLink {
   position: absolute;
   top: 90%;
-  left: 50%;
+  left: 51%;
   padding: 10px;
 }
 
@@ -75,13 +75,13 @@ body {
   top: 3px;
 }
 
-#btnLogin {
-  position: absolute;
-  top: 75%;
-  left: 45%;
-}
-
 #logoImg {
   position: absolute;
   left: 43%;
+}
+
+#btnLogin {
+  position: absolute;
+  left: 43%;
+  top: 73%;
 }
