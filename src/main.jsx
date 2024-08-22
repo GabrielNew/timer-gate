@@ -4,6 +4,7 @@ import "./styles/global.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import CreateAccount from "./pages/CreateAccount";
+import NotFoundPage404 from "./pages/404";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -11,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/createAccount" element={<CreateAccount />} />
-        <Route path="*" />
+        <Route path="*" element={<NotFoundPage404 />} />
       </Routes>
     </Router>
   </React.StrictMode>
