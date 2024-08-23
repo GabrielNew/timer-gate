@@ -1,0 +1,48 @@
+#backgroundBoxHours {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#inputStartHours {
+  position: relative;
+  left: 8.3%;
+  top: 30%;
+}
+
+#labelBeginHours {
+  position: relative;
+  left: 3.5%;
+}
+#inputEndHours {
+  position: relative;
+  left: 5%;
+  top: 40%;
+}
+
+#divBeginHour {
+  padding: 10px;
+  margin: 15px;
+  position: relative;
+  top: 10%;
+}
+
+#divEndHour {
+  padding: 10px;
+  margin: 15px;
+  position: relative;
+  top: 10%;
+}
+
+#btnConfirmHours {
+  padding: 3px;
+  margin: 10px;
+  position: relative;
+  left: 40%;
+  top: 15%;
+}
