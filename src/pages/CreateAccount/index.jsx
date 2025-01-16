@@ -3,6 +3,7 @@ import { GiPadlock } from "react-icons/gi";
 import { FaRegUser } from "react-icons/fa";
 import { useState } from "react";
 import "./styles.css";
+import axios from "axios";
 
 const CreateAccount = () => {
   const [name, setName] = useState("");
@@ -10,9 +11,21 @@ const CreateAccount = () => {
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
 
+  const createUser = async (e) => {
+    let msg = "test";
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:3000/createUser", {
+        msg,
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
     <>
-      <form>
+      <form action="post">
         <div id="loginBackgroundBox">
           <div id="logoImg">
             <h2 id="createAccountText">Create your account</h2>
@@ -71,7 +84,7 @@ const CreateAccount = () => {
             />
           </div>
           <div>
-            <button type="submit" id="btnCreateAccount">
+            <button type="submit" id="btnCreateAccount" onClick={createUser}>
               Create account
             </button>
           </div>
