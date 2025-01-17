@@ -6,7 +6,8 @@ const corsOptions = {
 };
 
 const app = express();
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors(corsOptions));
 
 app.get("", (req, res) => {
@@ -14,7 +15,8 @@ app.get("", (req, res) => {
 });
 
 app.post("/createUser", async (req, res) => {
-  console.log(req);
+  const { name } = req.body;
+  console.log(name);
 });
 
 app.listen(3000, () => {

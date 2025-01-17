@@ -12,11 +12,10 @@ const CreateAccount = () => {
   const [passwordConfirm, setPasswordConfirm] = useState("");
 
   const createUser = async (e) => {
-    let msg = "test";
     e.preventDefault();
     try {
       await axios.post("http://localhost:3000/createUser", {
-        msg,
+        name,
       });
     } catch (e) {
       console.log(e);
