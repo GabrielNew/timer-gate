@@ -13,12 +13,19 @@ const CreateAccount = () => {
 
   const createUser = async (e) => {
     e.preventDefault();
-    try {
-      await axios.post("http://localhost:3000/createUser", {
-        name,
-      });
-    } catch (e) {
-      console.log(e);
+
+    if (password === passwordConfirm) {
+      try {
+        await axios.post("http://localhost:3000/createUser", {
+          name,
+          email,
+          password,
+        });
+      } catch (e) {
+        console.log(e);
+      }
+    } else {
+      alert("The passwords are different!");
     }
   };
 
