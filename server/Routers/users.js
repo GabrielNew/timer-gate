@@ -15,4 +15,8 @@ userRouter.post("/users", async (req, res) => {
   }
 });
 
+userRouter.get("/users/me", async (req, res) => {
+  res.send(req.user);
+});
+
 export { userRouter };
